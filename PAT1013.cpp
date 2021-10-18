@@ -2,7 +2,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-const int N=1e4+10;
+const int N=2e5+10;
 bool is_prime[N];   //标记数组，判断元素n是否是质数，1位质数，0不是质数
 
 /*埃式筛选法*/
@@ -39,7 +39,7 @@ int main(){
     vector<int> pr;
     int n,m;
     cin>>n>>m;
-    pr= isPrime(15000);
+    pr= isPrime(110000 );
     int ans=0;
 
     for(int i=n-1;i<m;i++){

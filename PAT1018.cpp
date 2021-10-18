@@ -12,8 +12,8 @@ struct Node{
 
 char maxN(int max,int B,int J,int C){
     if(max==B) return 'B';
-    else if(max==J) return 'J';
-    else return 'C';
+    else if(max==C) return 'C';
+    else return 'J';
 }
 int main(){
     int n;
