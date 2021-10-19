@@ -5,7 +5,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-const
 int main(){
+    string str;
+    stack<string> sta;
+
+    while(cin>>str){
+        sta.push(str);
+    }
+
+    while(!sta.empty()){
+        cout<<sta.top();
+        sta.pop();
+        if(!sta.empty()){
+            cout<<" ";
+        }
+    }
     return 0;
 }
+
+
+
+
