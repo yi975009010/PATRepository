@@ -4,7 +4,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 int main(){
     string s1,s2,temp="";    //s1为坏掉的键,s2为应该输入的字符
     getline(cin,s1);
@@ -21,4 +20,5 @@ int main(){
     }
     cout<<temp;
     return 0;
+
 }
