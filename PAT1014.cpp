@@ -4,7 +4,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-string week[7]={"MON","TUS","WED","THU","FRI","SAT","SUN"};
+string week[7]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
 int main(){
     string s1,s2,s3,s4;
     cin>>s1>>s2>>s3>>s4;
@@ -21,7 +21,7 @@ int main(){
             }
         }
     }
-
+    /*找出小时*/
     for(int temp=i+1;temp<n;temp++){
         if(s1[temp]==s2[temp]){
             if(isdigit(s1[temp])){
