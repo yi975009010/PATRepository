@@ -5,9 +5,10 @@
 using namespace std;
 
 const int N=110;
-int a[N];
+
 int main(){
     int n,k;
+    int a[N];
     cin>>n>>k;
     vector<int> res(n+1);
     for(int i=0;i<n;i++){
