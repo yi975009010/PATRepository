@@ -7,35 +7,22 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-
-int binarySearch(int target,vector<int> a){
-    int left=0,right=a.size()-1;
-    int ans=0;
-    while(left<=right){
-        int mid=left+(right-left)/2;
-        if(a[mid]==target) ans++;
-        else if(a[mid]>target) right=mid-1;
-        else left=mid+1;
-    }
-    return ans;
-}
 int main(){
-    int n;
-    cin>>n;
-    vector<int> a(n);
+    int n,temp;
+    scanf("%d",&n);
+    vector<int> score(101,0);
     for(int i=0;i<n;i++){
-        cin>>a[i];
+        scanf("%d",&temp);
+        score[temp]++;
     }
-    int k,temp,ans=0;
-    cin>>k;
+
+    int k;
+    scanf("%d",&k);
     while(k--){
-        cin>>temp;
-        int ans=binarySearch(temp,a);
-        cout<<ans;
-        if(k) {
-            cout<<" ";
-        }
-        ans=0;
+        int s,ans=0;
+        scanf("%d",&s);
+        printf("%d",score[s]);
+        if(k!=0) printf(" ");
     }
     return 0;
 }
