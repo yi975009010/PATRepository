@@ -26,10 +26,10 @@ int main(){
             string temp="";
             for(int j=0;j<s.size();j++){
                 temp+=s[i];
-                if(s[i]== '){
 
-                }
+
             }
+
         }
 
     }
